@@ -1,0 +1,14 @@
+<div>
+  <tag-input
+    placeholder="+ scope"
+    secondaryPlaceholder="+ scope"
+    [onlyFromAutocomplete]="true"
+    [ngModel]="['item1']"
+    [modelAsStrings]="true"
+    [addOnBlur]="true">
+    <tag-input-dropdown [showDropdownIfEmpty]="true"
+                        [autocompleteItems]="['item1', 'item2', 'item3']"
+                        [keepOpen]="false">
+    </tag-input-dropdown>
+  </tag-input>
+</div>
